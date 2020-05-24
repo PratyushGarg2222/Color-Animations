@@ -3,7 +3,7 @@
 
     <head>
         <title>
-            Cool anims
+            Color animations
         </title>
 
         <link type = "text/css" rel = "stylesheet" href = "assets/css/styling.css">
@@ -12,6 +12,7 @@
         
         <script type = "text/paperscript" canvas = "myCanvas">
             
+
             function onKeyDown(event){
 
                 var point = new Point(view.size.width,view.size.height) * Point.random();
@@ -102,6 +103,7 @@
                 myCircle.onFrame = function(event){
 
                     myCircle.scale(0.9);
+                    myCircle.fillColor.hue += 1.5;
 
                 }
 
