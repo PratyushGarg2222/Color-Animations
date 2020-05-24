@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Cool anims
+        </title>
+
+        <link type = "text/css" rel = "stylesheet" href = "assets/css/styling.css">
+        <!--Loading paperjs script-->
+        <script type = "text/javascript" src ="assets/js/paper-full.min.js"></script>
+        
+        <script type = "text/paperscript" canvas = "myCanvas">
+            
+            function onKeyDown(event){
+
+                var point = new Point(view.size.width,view.size.height) * Point.random();
+
+                var myCircle = new Path.Circle( point ,400);
+
+                if(event.key == 'a') 
+                    myCircle.fillColor = "#fe4a49";
+
+                else if(event.key == 'b')
+                    myCircle.fillColor = "#2ab7ca ";
+
+
+                    else if(event.key == 'c')
+                    myCircle.fillColor = "#fed766";
+
+                    else if(event.key == 'd')
+                    myCircle.fillColor = "#e6e6ea";
+
+                    else if(event.key == 'e')
+                    myCircle.fillColor = "#f6abb6";
+
+                    else if(event.key == 'f')
+                    myCircle.fillColor = "#ead5dc";
+
+                    else if(event.key == 'g')
+                    myCircle.fillColor = "#011f4b";
+
+                    else if(event.key == 'h')
+                    myCircle.fillColor = "#851e3e";
+
+                    else if(event.key == 'i')
+                    myCircle.fillColor = "#e7eff6";
+
+                    else if(event.key == 'j')
+                    myCircle.fillColor = "#009688";
+
+                    else if(event.key == 'k')
+                    myCircle.fillColor = "#65c3ba";
+
+                    else if(event.key == 'l')
+                    myCircle.fillColor = "#f37736";
+
+                    else if(event.key == 'm')
+                    myCircle.fillColor = "#7bc043";
+
+                    else if(event.key == 'n')
+                    myCircle.fillColor = "#4d648d";
+
+                    else if(event.key == 'o')
+                    myCircle.fillColor = "#ffe9dc";
+
+                    else if(event.key == 'p')
+                    myCircle.fillColor = "#c99789";
+
+                    else if(event.key == 'q')
+                    myCircle.fillColor = "#88d8b0";
+
+                    else if(event.key == 'r')
+                    myCircle.fillColor = "#ffeead";
+
+                    else if(event.key == 's')
+                    myCircle.fillColor = "#854442";
+
+                    else if(event.key == 't')
+                    myCircle.fillColor = "#0057e7 ";
+
+                    else if(event.key == 'u')
+                    myCircle.fillColor = " #ff3377";
+
+                    else if(event.key == 'v')
+                    myCircle.fillColor = "#2e003e";
+
+                    else if(event.key == 'w')
+                    myCircle.fillColor = "#3d2352";
+
+                    else if(event.key == 'x')
+                    myCircle.fillColor = "#3d1e6d";
+
+                    else if(event.key == 'y')
+                    myCircle.fillColor = "#BED905";
+
+                    else if(event.key == 'z')
+                    myCircle.fillColor = "#52591F";
+
+                    
+
+                myCircle.onFrame = function(event){
+
+                    myCircle.scale(0.9);
+
+                }
+
+            }
+
+            
+
+        
+        </script>
+
+        <script src = "assets/js/howler.min.js"></script>
+        <script src = "assets/js/myScript.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <canvas id = "myCanvas" resize="true"></canvas>
+
+    </body>
+
+</html>
